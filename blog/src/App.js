@@ -8,7 +8,7 @@ function App() {
 
   let post = '삼각지 고기 맛집';
 
-  let [글제목, 글제목변경] = useState(['스타벅스 할인 코드','기말고사 간식 배부','수험생 의자 추천']);
+  let [글제목, 글제목변경] = useState(['스타벅스 할인 코드','여자 셔츠 추천','수험생 의자 추천']);
   let [좋아요, 좋아요증가] = useState(0);
 
   function 제목바꾸기() {
@@ -39,8 +39,22 @@ function App() {
           <p  style={{color:'gray',fontSize:'13pt',fontWeight:'700', paddingBottom:'20px'}}> 4월 10일 발행</p>
           <hr style={{height:'1.5px', backgroundColor:'#1F85DE'}}></hr>
         </div>
+        
+        <Modal />
+      
     </div>
   );
+}
+
+function Modal(){
+  return (
+    <div className='modal'>
+          <h2>modal 창 제목</h2>
+          <p>날짜 </p>
+          <p>상세 내용</p>
+                    
+        </div>
+  )
 }
 
 export default App;
